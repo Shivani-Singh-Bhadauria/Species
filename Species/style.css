@@ -1,0 +1,14 @@
+table{
+    background-color: rgba(80, 80, 207, 0.308);
+    border-color: black;
+    padding: 10px;
+}
+table:hover{
+    background-color: beige;
+    color: black;
+}
+input[type=submit]{
+    background-color: rgba(80, 80, 207, 0.308);
+    border-color: black;
+    padding: 5px;
+}
