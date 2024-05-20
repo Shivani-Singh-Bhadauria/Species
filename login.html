@@ -4,80 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>Bird-species</title>
-    <link rel="icon" type="image/x-icon" href="/img/koala.png">
+    <link rel="icon" type="image/x-icon" href="koala.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <link rel="stylesheet" href="style.css">
-    <header class="text-gray-600 body-font">
+<body class="bg-gray-100">
+    <header class="text-gray-600 body-font bg-white shadow-md">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-            <a class="mr-5 hover:text-gray-900"href="index.html">Home</a>
-            <a class="mr-5 hover:text-gray-900" href="gallery.html">Gallery</a>
-            <a class="mr-5 hover:text-gray-900" href="contact.html">Contact Us</a>
-            <a class="mr-5 hover:text-gray-900" href="gallery.html">About Us</a>
-      
-          </nav>
-          <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
-            <img src="/img/koala.png" alt="img" width="20%">
-            <span class="ml-3 text-xl">Species</span>
-          </a>
-          <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-            <button accesskey="index.html" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Other Species
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
-          </div>
+            <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+                <a class="mr-5 hover:text-gray-900" href="index.html">Home</a>
+                <a class="mr-5 hover:text-gray-900" href="gallery.html">Gallery</a>
+                <a class="mr-5 hover:text-gray-900" href="contact.html">Contact Us</a>
+                <a class="mr-5 hover:text-gray-900" href="gallery.html">About Us</a>
+            </nav>
+            <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+                <img src="koala.png" alt="img" width="20%">
+                <span class="ml-3 text-xl">Species</span>
+            </a>
+            <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+                <button accesskey="index.html" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Other Species
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
-      </header>
-      <center><font size="10">Sign Up</font></center>
-      <p>       <br>  </p>
-    <center>
-      <table>
-        <td>
-          <form action="formdata.html">
-          <label for="fname">1.First name:</label>
-          <input type="text" id="fname" name="fname" placeholder="First Name" required><br><p> <br> </p>
-          <label for="lname">2.Last name :</label>
-          <input type="text" id="lname" name="lname" placeholder="Last Name" required><br> 
-          </form><p> <br> </p>
-       <p>3.Choose the favourite specie.</p>
-       <form>
-           <input type="radio" id="Birds" name="fav_specie" value="Birds">
-           <label for="Birds">Birds  </label><br>
-           <input type="radio" id="Reptiles" name="fav_specie" value="Reptiles">
-           <label for="Reptiles">Reptiles </label><br>
-           <input type="radio" id="Mammals" name="fav_specie" value="Mammals">
-           <label for="Mammals">Mammals</label>&nbsp;
-           <p> <br> </p>
-       </form>
-      
-       <p>4.Select the areas of interest</p>
-       <form>
-           <input type="checkbox" id="Marine species" name="Marine species" value="Marine species">
-           <label for="Marine species">Marine species</label><br>
-           <input type="checkbox" id="Land species" name="Land species" value="Land species">
-           <label for="Land species">Land species</label><br>
-           <input type="checkbox" id="Flying species" name="Flying species" value="Flying species">
-           <label for="Flying species">Flying species</label>
-       </form>
-    
-       <p>   <br>5.Choose the your country</p>
-       <form>
-           <select name="Country" id="Cy">
-           <option value="India">India</option>
-           <option value="North America">North America</option>
-           <option value="South America">South America</option>
-           <option value="Finland">Finland</option>
-        </select> <p>  </p> <br>
-        </form></td>
-      </table>
-    </center>
-    <p> <br> </p>
-    <center><form><input type="submit" value="Submit"></form></center>
-
-
+    </header>
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl text-center font-semibold mb-8">Sign Up</h1>
+        <form action="formdata.html" class="max-w-lg mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div class="mb-4">
+                <label for="fname" class="block text-gray-700 text-sm font-bold mb-2">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="First Name" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div class="mb-4">
+                <label for="lname" class="block text-gray-700 text-sm font-bold mb-2">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Last Name" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div class="mb-4">
+                <label for="fav_specie" class="block text-gray-700 text-sm font-bold mb-2">Favorite Species:</label>
+                <div class="flex">
+                    <input type="radio" id="Birds" name="fav_specie" value="Birds" class="mr-2">
+                    <label for="Birds">Birds</label>
+                    <input type="radio" id="Reptiles" name="fav_specie" value="Reptiles" class="mr-2 ml-4">
+                    <label for="Reptiles">Reptiles</label>
+                    <input type="radio" id="Mammals" name="fav_specie" value="Mammals" class="mr-2 ml-4">
+                    <label for="Mammals">Mammals</label>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2">Areas of Interest:</label>
+                <div class="flex">
+                    <input type="checkbox" id="Marine_species" name="Marine_species" value="Marine species" class="mr-2">
+                    <label for="Marine_species">Marine Species</label>
+                    <input type="checkbox" id="Land_species" name="Land_species" value="Land species" class="mr-2 ml-4">
+                    <label for="Land_species">Land Species</label>
+                    <input type="checkbox" id="Flying_species" name="Flying_species" value="Flying species" class="mr-2 ml-4">
+                    <label for="Flying_species">Flying Species</label>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="Country" class="block text-gray-700 text-sm font-bold mb-2">Country:</label>
+                <select name="Country" id="Country" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="India">India</option>
+                    <option value="North America">North America</option>
+                    <option value="South America">South America</option>
+                    <option value="Finland">Finland</option>
+                </select>
+            </div>
+            <div class="flex justify-center">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Submit</button>
+            </div>
+        </form>
+    </div>
 </body>
-</html>      
+</html>
+ 
